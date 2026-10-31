@@ -46,6 +46,17 @@ streamlit run app.py
 - [`rag_pipeline.gemini_summary`](rag_pipeline.py)
 - Files: [app.py](app.py), [rag_pipeline.py](rag_pipeline.py), [requirements.txt](requirements.txt), [data/embeddings.npy](data/embeddings.npy), [data/reviews.index](data/reviews.index)
 
+## Individual Contribution — P. Sri Sai Revanth
+
+My primary contributions to the project focused on data preprocessing, semantic representation and the retrieval component of the Retrieval-Augmented Generation (RAG) pipeline.
+
+- **Data Preprocessing:** Contributed to cleaning, preparing and structuring customer review datasets for downstream processing.
+- **Semantic Embeddings:** Worked with the `all-mpnet-base-v2` model to generate dense semantic embeddings of customer reviews.
+- **Vector Indexing and Retrieval:** Contributed to integrating FAISS for vector indexing and implementing similarity-based retrieval to identify relevant customer reviews in response to user queries.
+- **RAG Pipeline Integration:** Contributed to connecting the retrieved review context with the Google Gemini summarisation workflow, enabling the generation of query-specific, evidence-grounded summaries and recommendations.
+
+These contributions supported the retrieval and contextualisation stages of the project, forming an important part of the overall customer-feedback summarisation workflow.
+
 ## Notes
 - Ensure your `reviews_df.pkl` (used by `rag_pipeline.py`) is present in `data/` if you regenerate or re-run the pipeline.
 - Secure your API keys; avoid committing them to the repo.
